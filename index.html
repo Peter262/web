@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Registration form by Sayan</h1>
+    <form
+      action="/myaction.php"
+      name="myForm"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <div class="formDesign" id="name">
+        Name : <input type="text" name="fullName" required /><span
+          class="formError"
+        ></span>
+      </div>
+
+      <div class="formDesign" id="email">
+        Email : <input type="email" name="emailAdd" required /><span
+          class="formError"
+        ></span>
+      </div>
+
+      <div class="formDesign" id="phone">
+        Phone : <input type="phone" name="phoneNum" required /><span
+          class="formError"
+        ></span>
+      </div>
+
+      <div class="formDesign" id="password">
+        Password : <input type="password" name="firstPass" required /><span
+          class="formError"
+        ></span>
+      </div>
+
+      <div class="formDesign" id="confirmPassword">
+        Confirm Passowrd : <input type="password" name="cPass" required /><span
+          class="formError"
+        ></span>
+      </div>
+
+      <input class="butn" type="submit" value="Submit" />
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>
